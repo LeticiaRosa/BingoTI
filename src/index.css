@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-purple-300 to-pink-100 min-h-screen;
+  }
+}
+
+@layer components {
+  .skill-card {
+    @apply bg-white rounded-lg shadow-md p-4 cursor-pointer transition-all duration-200 hover:shadow-lg min-h-[120px] flex flex-col justify-center;
+  }
+  .skill-card.selected {
+    @apply bg-purple-500 text-white transform scale-105;
+  }
+
+  .skill-card img {
+    @apply transition-all duration-200 filter;
+  }
+
+  .skill-card.selected img {
+    @apply brightness-0 invert;
+  }
+
+  .profile-image {
+    @apply transition-all duration-300 hover:scale-105 drop-shadow-lg;
+  }
+
+  .profile-image:hover {
+    @apply drop-shadow-xl;
+  }
+}
