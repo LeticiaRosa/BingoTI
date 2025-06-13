@@ -1,0 +1,133 @@
+.game-title-container {
+  text-align: center;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.game-title {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title-ti {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.letter {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: perspective(500px) rotateX(15deg);
+  transition: transform 0.3s ease;
+}
+
+.letter:hover {
+  transform: perspective(500px) rotateX(15deg) scale(1.1);
+}
+
+.letter-b {
+  background: linear-gradient(45deg, #ff4444, #ff6666);
+  color: white;
+  box-shadow: 0 5px 0 #cc2222, 0 10px 20px rgba(255, 68, 68, 0.4);
+}
+
+.letter-i {
+  background: linear-gradient(45deg, #ffaa00, #ffcc44);
+  color: white;
+  box-shadow: 0 5px 0 #cc8800, 0 10px 20px rgba(255, 170, 0, 0.4);
+}
+
+.letter-n {
+  background: linear-gradient(45deg, #44ff44, #66ff66);
+  color: white;
+  box-shadow: 0 5px 0 #22cc22, 0 10px 20px rgba(68, 255, 68, 0.4);
+}
+
+.letter-g {
+  background: linear-gradient(45deg, #4444ff, #6666ff);
+  color: white;
+  box-shadow: 0 5px 0 #2222cc, 0 10px 20px rgba(68, 68, 255, 0.4);
+}
+
+.letter-o {
+  background: linear-gradient(45deg, #aa44ff, #cc66ff);
+  color: white;
+  box-shadow: 0 5px 0 #8822cc, 0 10px 20px rgba(170, 68, 255, 0.4);
+}
+
+.letter-t {
+  background: linear-gradient(45deg, #ff6b35, #ff8c42);
+  color: white;
+  box-shadow: 0 5px 0 #cc4422, 0 10px 20px rgba(255, 107, 53, 0.4);
+  padding: 8px 12px;
+  font-size: 0.9em;
+}
+
+.letter-i2 {
+  background: linear-gradient(45deg, #ff0084, #ff69b4);
+  color: white;
+  box-shadow: 0 5px 0 #aa336a, 0 10px 20px rgba(32, 191, 107, 0.4);
+  padding: 8px 12px;
+  font-size: 0.9em;
+}
+
+.title-subtitle {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .title-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .game-title {
+    font-size: 2.5rem;
+    gap: 2px;
+  }
+
+  .title-ti {
+    font-size: 1.8rem;
+    gap: 2px;
+  }
+
+  .letter {
+    padding: 5px 8px;
+    border-radius: 15px;
+  }
+
+  .letter-t,
+  .letter-i2 {
+    padding: 4px 6px;
+  }
+
+  .title-subtitle {
+    font-size: 1.2rem;
+  }
+}

@@ -1,12 +1,13 @@
 import React from "react";
 import { useGameStore } from "../store/gameStore";
+import GameTitle from "./GameTitle";
 
 export const GameHeader: React.FC = () => {
   const { selectedSkills, calculateProfile, showResult } = useGameStore();
 
   return (
     <div className="text-center mb-8">
-      <h1 className="text-4xl font-bold text-gray-900 mb-4">🧩 Bingo TI</h1>
+      <GameTitle />
       <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
         Marque as skills que você já desenvolveu na sua carreira tech e descubra
         seu perfil profissional!
