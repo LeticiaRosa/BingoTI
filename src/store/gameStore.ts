@@ -48,5 +48,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
       showResult: false,
       currentProfile: null,
     });
+    const soundManager = SoundManager.getInstance();
+    soundManager.stop("result");
   },
 }));

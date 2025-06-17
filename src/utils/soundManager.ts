@@ -22,7 +22,7 @@ export class SoundManager {
     Object.entries(soundFiles).forEach(([key, path]) => {
       const audio = new Audio(path);
       audio.preload = "auto";
-      audio.volume = 0.7;
+      audio.volume = 0.4;
       this.sounds.set(key, audio);
     });
   }
@@ -32,6 +32,14 @@ export class SoundManager {
     if (sound) {
       sound.currentTime = 0;
       sound.play().catch(console.error);
+    }
+  }
+
+  public stop(soundName: string) {
+    const sound = this.sounds.get(soundName);
+    if (sound) {
+      sound.pause();
+      sound.currentTime = 0;
     }
   }
 }
