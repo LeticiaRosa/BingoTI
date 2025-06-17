@@ -31,9 +31,6 @@ export const ResultModal: React.FC = () => {
               src={currentProfile.image}
               alt={currentProfile.name}
               className="w-80 h-80 md:w-70 md:h-70 object-contain"
-              onLoad={() =>
-                console.log("Imagem carregada:", currentProfile.image)
-              }
               loading="lazy"
             />
           </div>

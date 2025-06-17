@@ -28,7 +28,7 @@ export const profiles: Profile[] = [
   {
     name: "Estagiário Raiz",
     emoji: "☕",
-    image: "/estagiario.png",
+    image: "/images/estagiario.png",
     description: "Café feito, código quebrado. Mas tá no jogo!",
     minScore: 3,
     maxScore: 5,
@@ -36,7 +36,7 @@ export const profiles: Profile[] = [
   {
     name: "Profissional em Formação",
     emoji: "🌱",
-    image: "/estagiario.png",
+    image: "/images/estagiario.png",
     description: "É sobre começar. E você começou bem!",
     minScore: 0,
     maxScore: 2,
