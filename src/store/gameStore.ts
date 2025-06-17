@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { GameState } from "../types";
 import { profiles } from "../data/profiles";
+import { SoundManager } from "../utils/soundManager";
 
 interface GameStore extends GameState {
   toggleSkill: (skillId: string) => void;
@@ -20,6 +21,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
       : [...selectedSkills, skillId];
 
     set({ selectedSkills: newSelectedSkills });
+    const soundManager = SoundManager.getInstance();
+    soundManager.play("select");
   },
 
   calculateProfile: () => {
@@ -34,6 +37,9 @@ export const useGameStore = create<GameStore>((set, get) => ({
       currentProfile: profile || profiles[profiles.length - 1],
       showResult: true,
     });
+    // Play result sound
+    const soundManager = SoundManager.getInstance();
+    soundManager.play("result");
   },
 
   resetGame: () => {
