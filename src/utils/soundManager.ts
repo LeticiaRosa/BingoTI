@@ -22,7 +22,7 @@ export class SoundManager {
     Object.entries(soundFiles).forEach(([key, path]) => {
       const audio = new Audio(path);
       audio.preload = "auto";
-      audio.volume = 0.4;
+      audio.volume = 0.2;
       this.sounds.set(key, audio);
     });
   }

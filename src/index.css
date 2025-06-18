@@ -10,7 +10,7 @@
 
 @layer components {
   .skill-card {
-    @apply bg-white rounded-lg shadow-md p-4 cursor-pointer transition-all duration-200 hover:shadow-lg min-h-[120px] flex flex-col justify-center;
+    @apply bg-white rounded-lg shadow-md p-3 cursor-pointer transition-all duration-200 hover:shadow-lg min-h-[120px] flex flex-col justify-center;
   }
   .skill-card:hover {
     transform: perspective(900px) scale(1.1);
