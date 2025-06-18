@@ -2,7 +2,7 @@
 
 > Um projeto Single Page Application (SPA) interativo que transforma sua jornada profissional em diversão! Marque suas skills, descubra seu perfil e ria das dores e glórias de ser dev em 2025. 🤓🚀
 
-![Demo do Bingo TI](link-para-screenshot.png)
+![Demo do Bingo TI](https://github.com/user-attachments/assets/f23f17f4-2107-4fcf-ae3a-d8692298de6c)
 
 ## 🎯 Sobre o Projeto
 
@@ -44,7 +44,7 @@ Dependendo das suas marcações, você pode ser classificado como:
 - **Acessibilidade** - Seguindo padrões WCAG
 
 ### Deploy & Infraestrutura
-- **Vercel** - Deploy contínuo e CDN global
+- **Netlify** - Deploy contínuo e CDN global
 
 ## 🚀 Como Executar
 
@@ -72,13 +72,7 @@ npm run build
 
 ## 🌐 Demo Online
 
-🔗 **[Jogar Bingo TI](https://bingo-ti.vercel.app)** - Experimente agora!
-
-## 📸 Screenshots
-
-| Desktop | Mobile |
-|---------|--------|
-| ![Desktop](screenshot-desktop.png) | ![Mobile](screenshot-mobile.png) |
+🔗 **[Jogar Bingo TI](https://bingoti.netlify.app/)** - Experimente agora!
 
 ## 🎨 Por Que Este Projeto?
 
