@@ -2,7 +2,7 @@ import { Profile } from "../types";
 
 export const profiles: Profile[] = [
   {
-    name: "Trabalhador Nato™",
+    name: "Super Trabalhador",
     emoji: "🏆",
     image: "/images/Super-herói%20da%20Tecnologia%20em%20Ação.png",
     description: "Super Profissional. O mercado que lute pra te segurar.",
@@ -10,7 +10,7 @@ export const profiles: Profile[] = [
     maxScore: 16,
   },
   {
-    name: "Trabalhador Esforçado",
+    name: "Trabalhador mago",
     emoji: "💪",
     image: "/images/Mago%20da%20Tecnologia.png",
     description: "Batalha todo santo dia. Já merece um aumento!",
@@ -26,17 +26,17 @@ export const profiles: Profile[] = [
     maxScore: 9,
   },
   {
-    name: "Estagiário Raiz",
+    name: "Júnior Descolado",
     emoji: "☕",
-    image: "/estagiario.png",
+    image: "/images/Junior.png",
     description: "Café feito, código quebrado. Mas tá no jogo!",
     minScore: 3,
     maxScore: 5,
   },
   {
-    name: "Profissional em Formação",
+    name: "Estagiário Raiz",
     emoji: "🌱",
-    image: "/estagiario.png",
+    image: "/images/Estagiario.png",
     description: "É sobre começar. E você começou bem!",
     minScore: 0,
     maxScore: 2,
