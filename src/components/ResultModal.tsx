@@ -27,12 +27,9 @@ export const ResultModal: React.FC = () => {
       <div className="bg-white rounded-xl p-8 max-w-md w-full text-center">
         <div className="mb-6 flex justify-center">
           <div className="relative">
-            <img
-              src={currentProfile.image}
-              alt={currentProfile.name}
-              className="w-80 h-80 md:w-70 md:h-70 object-contain"
-              loading="lazy"
-            />
+            <div className="w-40 h-40 text-8xl flex items-center justify-center">
+              {currentProfile.emoji}
+            </div>
           </div>
         </div>
 
